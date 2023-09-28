@@ -16,6 +16,7 @@ I used the following components to create my extension:
 - A background script that runs in the background and handles the logic of the extension.
 - A content script that runs in the context of the web page and manipulates the DOM elements.
 - An icons folder that contains the images for the extension icon and the pointer styles.
+- A CSS file to change and inject when extension is in on state to change cursor style.
 
 ## Chrome API insights
 
