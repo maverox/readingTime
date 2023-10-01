@@ -2,7 +2,7 @@
 
 :root {
 	--color: 255, 71, 84;
-	--cursor-size: 48px;
+	--cursor-size: 36px;
 }
 * {
 	cursor: pointer;
@@ -38,12 +38,12 @@
 	transform: translate(-50%, -50%);
 
 	border: calc(var(--cursor-size) / 6)
-			solid rgba(var(--color), 0.5);
+			dotted rgba(var(--color), 0.3);
 
 	border-radius: 50%;
 
 	animation: cursor-before 800ms infinite
-			alternate ease-in-out;
+			alternate cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .new-cursor.click {
@@ -66,12 +66,12 @@
 @keyframes cursor-before {
 	from {
 		transform: translate(-50%, -50%) scale(1);
-		border-color: rgba(var(--color), 0.5);
+		border-color: rgba(var(--color), 0.25);
 	}
 
 	to {
 		transform: translate(-50%, -50%) scale(1.5);
-		border-color: rgba(var(--color), 0.75);
+		border-color: rgba(var(--color), 0.5);
 	}
 }
 
